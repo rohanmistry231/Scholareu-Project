@@ -1,0 +1,242 @@
+/* Container for the scholarships grid */
+.scholarships-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+/* Style for each scholarship card */
+.scholarship-card {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-sizing: border-box; /* Ensure padding and border don't affect size */
+}
+
+/* Hover effect for scholarship cards */
+.scholarship-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0px 24px rgba(2, 22, 55, 0.4);
+}
+
+/* Title styling inside scholarship card */
+.scholarship-card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #3b82f6; /* Updated color */
+}
+
+/* Tag styling inside scholarship card */
+.scholarship-card-tags {
+  margin-top: 0.75rem;
+}
+
+.scholarship-tag {
+  display: inline-block;
+  background-color: #e0e0e0;
+  color: #333333;
+  font-size: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Button styling for More Details */
+.scholarship-details-button {
+  background-color: #3b82f6; /* Updated color */
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 1rem;
+}
+
+/* Hover effect for More Details button */
+.scholarship-details-button:hover {
+  background-color: #2563eb; /* Updated color */
+}
+
+/* Modal overlay styling */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Modal content styling */
+.modal-content {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  width: 90%;
+  max-width: 700px;
+  position: relative;
+  box-sizing: border-box;
+  animation: slideInUp 0.5s ease-in-out;
+}
+
+/* Title styling inside modal */
+.modal-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #333333;
+}
+
+/* Description styling inside modal */
+.modal-description {
+  margin-top: 1rem;
+  color: #555555;
+}
+
+/* Detail styling inside modal */
+.modal-detail {
+  margin-top: 0.5rem;
+  color: #333333;
+}
+
+/* Button styling for Apply Here in modal */
+.modal-apply-button {
+  background-color: #3b82f6; /* Updated color */
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+/* Hover effect for Apply Here button */
+.modal-apply-button:hover {
+  background-color: #2563eb; /* Updated color */
+}
+
+/* Button styling for Close in modal */
+.modal-close-button {
+  background-color: #f44336;
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 1rem;
+}
+
+/* Hover effect for Close button */
+.modal-close-button:hover {
+  background-color: #d32f2f;
+}
+
+/* Loader styling during data fetching */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Loader animation */
+.loader {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #3b82f6; /* Updated color */
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  animation: spin 1s linear infinite;
+}
+
+/* Keyframes for loader animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Loading text styling */
+.loading-text {
+  margin-top: 0.5rem;
+  color: #555555;
+}
+
+/* Search input styling */
+.search-container {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #16165772;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  box-sizing: border-box;
+  margin: 0px 6px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Search input hover effect */
+.search-input:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .modal-content {
+    padding: 1.5rem;
+    width: 95%;
+  }
+
+  .modal-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .modal-content {
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .modal-title {
+    font-size: 1.25rem;
+  }
+
+  .scholarship-card {
+    padding: 1rem;
+  }
+
+  .search-input {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+}
+
+/* Animations */
+@keyframes slideInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

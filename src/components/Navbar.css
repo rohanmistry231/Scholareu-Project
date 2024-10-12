@@ -1,0 +1,69 @@
+/* Navbar.css */
+
+/* Style for the sticky navbar */
+.sticky-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #3b82f6; /* Adjust to match the background color */
+    padding: 1rem; /* Adjust padding as needed */
+    z-index: 1000; /* Ensures the navbar is above other content */
+    border-bottom: 1px solid #ddd; /* Optional: adds a bottom border */
+  }
+  
+  /* Container adjustments */
+  .container {
+    max-width: 1200px; /* Adjust the max-width to fit your design */
+    margin: 0 auto; /* Center container */
+    padding: 0 1rem; /* Horizontal padding */
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .items-center {
+    align-items: center;
+  }
+  
+  .space-x-2 {
+    margin-right: 0.5rem; /* Horizontal spacing */
+  }
+  
+  .space-x-4 {
+    margin-right: 1rem; /* Horizontal spacing */
+  }
+  
+  .text-white {
+    color: #ffffff;
+  }
+  
+  .text-lg {
+    font-size: 1.125rem; /* Adjust as needed */
+  }
+  
+  .font-bold {
+    font-weight: bold;
+  }
+  
+  .hover\:text-gray-300:hover {
+    color: #d1d5db; /* Light gray color for hover effect */
+  }
+  
+  .transition {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .hover\:scale-105:hover {
+    transform: scale(1.05);
+  }
+  
+  .bg-white {
+    background-color: #ffffff;
+  }
+  
+  .rounded-lg {
+    border-radius: 0.5rem;
+  }
+  
