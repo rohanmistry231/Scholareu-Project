@@ -1,13 +1,13 @@
-import React from 'react';
-import { Link, useNavigate } from 'react-router-dom'; // Import useNavigate instead of useHistory
-import logo from '../components/logo.png';  // Ensure the logo image is placed in the public folder
-import './Navbar.css';
+import React from "react";
+import { Link, useNavigate } from "react-router-dom"; // Import useNavigate instead of useHistory
+import logo from "../components/logo.png"; // Ensure the logo image is placed in the public folder
+import "./Navbar.css";
 
 function Navbar() {
   const navigate = useNavigate(); // Replace useHistory with useNavigate
 
   const handleSearch = (event) => {
-    if (event.key === 'Enter') {
+    if (event.key === "Enter") {
       const query = event.target.value;
       navigate(`/search?query=${query}`); // Navigate to the search results page with the query
     }
@@ -26,10 +26,16 @@ function Navbar() {
 
         {/* Navigation Links with Hover Animation */}
         <div className="flex space-x-4">
-          <Link to="/" className="text-white hover:text-gray-300 transition duration-300 ease-in-out">
+          <Link
+            to="/"
+            className="text-white hover:text-gray-300 transition duration-300 ease-in-out"
+          >
             Home
           </Link>
-          <Link to="/scholarships" className="text-white hover:text-gray-300 transition duration-300 ease-in-out">
+          <Link
+            to="/scholarships"
+            className="text-white hover:text-gray-300 transition duration-300 ease-in-out"
+          >
             Scholarships
           </Link>
         </div>

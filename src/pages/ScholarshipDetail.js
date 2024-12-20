@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 function ScholarshipDetail({ match }) {
   const { id } = match.params;
@@ -8,7 +8,7 @@ function ScholarshipDetail({ match }) {
     title: `Scholarship ${id}`,
     description: `Detailed description of Scholarship ${id}.`,
     criteria: `Eligibility criteria for Scholarship ${id}.`,
-    link: "https://example.com/apply"
+    link: "https://example.com/apply",
   };
 
   return (
@@ -18,7 +18,12 @@ function ScholarshipDetail({ match }) {
       <ul className="mt-4 list-disc list-inside">
         <li>{scholarship.criteria}</li>
       </ul>
-      <a href={scholarship.link} className="mt-8 inline-block bg-blue-500 text-white p-2 rounded">Apply Now</a>
+      <a
+        href={scholarship.link}
+        className="mt-8 inline-block bg-blue-500 text-white p-2 rounded"
+      >
+        Apply Now
+      </a>
     </div>
   );
 }

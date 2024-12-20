@@ -129,7 +129,9 @@ const Home = () => {
       {/* About Me Section */}
       <section className="about-me-section">
         <div className="about-me-content">
-          <div className={`profile-container ${imageLoaded ? 'image-loaded' : ''}`}>
+          <div
+            className={`profile-container ${imageLoaded ? "image-loaded" : ""}`}
+          >
             <img
               src="profile.png" // Replace with your actual image URL
               alt="Your Name"
@@ -140,18 +142,21 @@ const Home = () => {
           <div className="about-me-text">
             <h2 className="about-me-title">About Me</h2>
             <p>
-              Hello! I'm <span style={{ color: "#3b82f6" }}>
+              Hello! I'm{" "}
+              <span style={{ color: "#3b82f6" }}>
                 <b>Meraj Hussain</b>
-              </span>, dedicated to creating a platform that
-              helps Nepali students discover and access scholarships that pave
-              the way to their academic and career success. With my background
-              in <span style={{ color: "#3b82f6" }}>
+              </span>
+              , dedicated to creating a platform that helps Nepali students
+              discover and access scholarships that pave the way to their
+              academic and career success. With my background in{" "}
+              <span style={{ color: "#3b82f6" }}>
                 <b>Computer Engineering</b>
-              </span>, my mission is to make it
-              easier for students in Nepal to find and apply for scholarships,
-              supporting their journey toward a brighter future. Connect with me
-              if you’re passionate about educational opportunities and want to
-              explore how we can make a difference together.
+              </span>
+              , my mission is to make it easier for students in Nepal to find
+              and apply for scholarships, supporting their journey toward a
+              brighter future. Connect with me if you’re passionate about
+              educational opportunities and want to explore how we can make a
+              difference together.
             </p>
           </div>
         </div>
